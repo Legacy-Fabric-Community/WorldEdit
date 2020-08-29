@@ -2,7 +2,7 @@ rootProject.name = "worldedit"
 
 include("worldedit-libs")
 
-listOf("bukkit", "core", "forge", "sponge", "fabric", "cli").forEach {
+listOf("core", "legacy-fabric").forEach {
     include("worldedit-libs:$it")
     include("worldedit-$it")
 }
